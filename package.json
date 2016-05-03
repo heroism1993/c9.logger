@@ -1,0 +1,9 @@
+{
+    "name" : "c9.logger",
+    "description" : "The repository for c9.logger, a Cloud9 plugin",
+    "version" : "0.1.0",
+    "auth" : "heroism.1993",
+    "plugin": {
+        "logger" : {}
+    }
+}
