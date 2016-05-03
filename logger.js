@@ -127,9 +127,19 @@ define(function(require, exports, module){
         });
         /**** End logging file save ****/
         
+        /**** Logging login event ****/
+        var loginlogger = getLogger("login");
         auth.on("login",function(e){
-            console.log(e.uid+" logging.")
+            var info = e.uid + " is logining.";
+            loginlogger.info("login "+info);
         });
+        
+        auth.on("logout",function(e) {
+            var info = e.uid + "is logout.";
+            loginlogger.info("logout "+info);
+        })
+        
+        /**** End logging login event ****/
         
         
         
